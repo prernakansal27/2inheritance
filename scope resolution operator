@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+class A{
+    public:
+    int maths;//ambiguity arrises
+    A(){       //contructor is called
+        maths = 101;
+        
+    }
+    
+};
+class B{
+    public:
+    int maths; //here the problem of ambiguity arises
+    B(){       //contructor is called
+        maths = 200;
+    }
+};
+
+class C :public A,public B{
+    public:
+    int chemistry;
+    
+};
+
+int main(){
+    C obj;
+
+    cout<<obj.A::maths<<" "<<obj.chemistry<<" "<<endl;
+    return 0;
+    
+}
