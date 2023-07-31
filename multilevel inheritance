@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class fruit{
+    public:
+    string name;
+    
+};
+class mango:public fruit{
+    public:
+    int weight;
+    
+};
+
+class alphanzo:public mango{
+    public:
+    int age;
+    
+};
+
+int main(){
+    alphanzo a;
+    cout<<a.name<<""<<a.weight<<""<<a.age<<endl;
+    return 0;
+    
+}
