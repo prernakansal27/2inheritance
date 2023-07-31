@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class car{
+    public:
+    int age;
+    void speedup(){
+        cout<<"speeding up"<<endl;
+        
+    }
+     
+};
+class thar : public car{
+    public:
+    
+};
+
+class legender :public car{
+       
+};
+
+int main(){
+     thar t1;
+     t1.speedup();
+     
+     legender l1;
+     l1.speedup();
+
+   
+    return 0;
+    
+}
